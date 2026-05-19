@@ -1,5 +1,5 @@
 # Xytrix  
-## Gate-Level Simulation (GLS) Report
+## Gate-Level Simulation (GLS)
 
 ### Engineer
 **Jairus Samraj Solomon**

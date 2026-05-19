@@ -1,0 +1,1 @@
+-clean counter_netlist.v counter_test.v -v slow_vdd1v0_basicCells.v -sdf_verbose -timescale 1ns/10ps -sdfstats stats.txt -mess -access +rwc

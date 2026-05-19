@@ -1,0 +1,64 @@
+TOOL:	xrun	22.09-s003: Started on May 19, 2026 at 14:02:53 IST
+TOOL:	xrun(64)	22.09-s003: Started on May 19, 2026 at 14:02:53 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: counter_netlist.v
+	module worklib.counter:v
+		errors: 0, warnings: 0
+file: counter_test.v
+	module worklib.counter_test:v
+		errors: 0, warnings: 0
+file: slow_vdd1v0_basicCells.v
+	module slow_vdd1v0_basicCells.INVX1:v
+		errors: 0, warnings: 0
+	module slow_vdd1v0_basicCells.NAND2BX1:v
+		errors: 0, warnings: 0
+	module slow_vdd1v0_basicCells.NAND2X1:v
+		errors: 0, warnings: 0
+	module slow_vdd1v0_basicCells.SDFFRHQX1:v
+		errors: 0, warnings: 0
+	module slow_vdd1v0_basicCells.XNOR2X1:v
+		errors: 0, warnings: 0
+	module slow_vdd1v0_basicCells.XOR2XL:v
+		errors: 0, warnings: 0
+	primitive slow_vdd1v0_basicCells.altos_dff_r_err:v
+		errors: 0, warnings: 0
+	primitive slow_vdd1v0_basicCells.altos_dff_r:v
+		errors: 0, warnings: 0
+		Caching library 'slow_vdd1v0_basicCells' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+xmelab: *W,SDFSKPA: Ignore $sdf_annotate on line 12 file ./counter_test.v because of -nospecify option.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter:v <0x766311e7>
+			streams:   0, words:     0
+		worklib.counter_test:v <0x08961e71>
+			streams:   6, words:  2281
+		slow_vdd1v0_basicCells.SDFFRHQX1:v <0x4aaa77e6>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                   24       8
+		UDPs:                      16       2
+		Primitives:                79       5
+		Registers:                 12       7
+		Scalar wires:              21       -
+		Always blocks:              1       1
+		Initial blocks:             2       2
+		Cont. assignments:          0       1
+		Pseudo assignments:         4       4
+		Timing checks:            102       -
+		Delayed tcheck signals:    32       -
+		Simulation timescale:    10ps
+	Writing initial simulation snapshot: worklib.counter_test:v
+Loading snapshot worklib.counter_test:v .................... Done
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation stopped via $stop(1) at time 1030 NS + 0
+./counter_test.v:22 #1000 $stop;
+xcelium> 

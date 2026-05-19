@@ -1,0 +1,11 @@
+This Design is a simple 8 bit counter design. 
+
+It contains the below,
+a. RTL : counter.v
+b. TB : counter_test.v
+c. Netlist : counter_netlist.v
+d. Library : slow_vdd1v0_basicCells.v
+e. SDF : delays.sdf
+f. Few run files to help you run the flow.
+
+Please go through the runme and run.f files to understand the switches used to run the Gate Level Simulation of this design.

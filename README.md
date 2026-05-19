@@ -365,9 +365,3 @@ Key conclusions:
 
 ---
 
-# 14. References
-
-1. Cadence Design Systems, *Gate-Level Simulation (GLS): A Quick Guide for Beginners*, Product Version 15.2, April 2016. fileciteturn1file0L1-L4
-2. GLS simulation log files:
-   - `gls_zero_delay.log`
-   - `gls_sdf.log`
